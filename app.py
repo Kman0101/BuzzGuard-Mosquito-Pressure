@@ -24,7 +24,8 @@ def generate_forecast():
         {
             "Region": region,
             "Date": date.strftime("%Y-%m-%d"),
-            "Mosquito Pressure": int(px.utils.random.randint(2, 5))
+            "Mosquito Pressure": random.randint(2, 5)
+
         }
         for region in regions
         for date in dates
